@@ -1,0 +1,98 @@
+body {
+    background-color: #2a2a2a; /* Dark gray */
+    color: #f0f0f0; /* Light gray */
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    -ms-overflow-style: none; /* IE and Edge */
+}
+body::-webkit-scrollbar {
+    display: none;
+}
+header {
+    background-color: #4a4a4a; /* Slightly lighter dark gray */
+    text-align: center;
+    position: fixed;
+    width: 100%;
+    height: 60px;
+    top: 0;
+    z-index: 1000; /* Ensure header is above other content */
+}
+header h1 {
+    color: #f5c6e0; /* Rose pink */
+    margin: 0;
+    margin-top: 15px;
+}
+nav {
+    background-color: #333; /* Dark background for navbar */
+    text-align: center;
+    position: fixed;
+    width: 100%;
+    height: 48px;
+    top: 60px; /* Adjust according to header height */
+    z-index: 1000; /* Ensure navbar is above other content */
+}
+nav a {
+    color: #f5c6e0; /* Rose pink */
+    text-decoration: none;
+    padding-top: 15px;
+    height: 100%;
+    margin: 0 10px;
+    width: 100px;
+    display: inline-block;
+    font-size: 16px;
+    font-weight: bold;
+}
+nav a:hover {
+    text-decoration: underline;
+}
+.container {
+    padding: 140px 40px 40px; /* Adjust padding to account for fixed header and navbar */
+    max-width: 800px;
+    margin: 0 auto;
+}
+.section {
+    margin-bottom: 40px;
+    scroll-margin-top: 160px; /* Adjust scroll position to account for header and navbar */
+}
+.section h2 {
+    color: #f5c6e0; /* Rose pink */
+    border-bottom: 2px solid #f5c6e0;
+    padding-bottom: 10px;
+}
+.section p {
+    line-height: 1.6;
+}
+footer {
+    background-color: #4a4a4a; /* Slightly lighter dark gray */
+    text-align: center;
+    padding: 10px;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+    z-index: 1000; /* Ensure footer is above other content */
+}
+footer p {
+    margin: 0;
+}
+.project-preview-card, .blog-preview-card, .see-more-card{
+    background-color: #333; /* Background color for the card */
+    padding: 15px; /* Padding inside the card */
+    border-radius: 8px; /* Rounded corners for the card */
+    margin-bottom: 15px; /* Margin between cards */
+}
+.project-preview-card:hover, .blog-preview-card:hover, .see-more-card:hover {
+    background-color: #444; /* Darker background color when hovering */
+}
+.project-preview-card h3, .blog-preview-card h3, .see-more-card{
+    color: #f5c6e0; /* Rose pink */
+}
+.project-preview-card p, .blog-preview-card p {
+    margin-bottom: 10px; /* Margin below the paragraph */
+    line-height: 1.6;
+}
+.preview-card-link, .see-more-link{
+    text-decoration: none; /* Remove default underline for links */
+    color: inherit; /* Inherit text color from parent */
+    display: block; /* Make the entire card clickable */
+}
