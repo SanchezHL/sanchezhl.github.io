@@ -4,17 +4,22 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>David Sanchez-Hermosilla's Personal Page</title>
+    <link rel="icon" type="image/svg+xml" href="favicon.svg">
     <link rel="stylesheet" href="styles.css">
+    <script src="script.js"></script>
 </head>
 <body>
     <header>
         <h1>David Sanchez-Hermosilla</h1>
     </header>
     <nav>
-        <a href="#about-me">About Me</a>
-        <a href="projects.html">Projects</a>
-        <a href="blog.html">Blog</a>
-        <a href="#contact">Contact</a>
+        <div class="nav-links" id="navLinks">
+            <a href="#about-me">About Me</a>
+            <a href="projects.html">Projects</a>
+            <a href="blog.html">Blog</a>
+            <a href="#contact">Contact</a>
+        </div>
+        <button class="menu-toggle" id="menuToggle">&#9776; Navegation</button>
     </nav>
     <div class="container">
         <div class="section" id="about-me">
@@ -51,7 +56,7 @@
         </div>
         <div class="section" id="contact">
             <h2>Contact</h2>
-            <p>You can reach me at <a href="mailto:your.email@example.com">your.email@example.com</a>.</p>
+            <p>You can reach me at <a href="mailto:your.email@example.com">your.email@example.com</a></p>
         </div>
     </div>
     <footer>
