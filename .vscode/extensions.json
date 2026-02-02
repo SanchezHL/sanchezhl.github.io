@@ -1,0 +1,16 @@
+{
+  "recommendations": [
+    "dbaeumer.vscode-eslint",
+    "esbenp.prettier-vscode",
+    "bradlc.vscode-tailwindcss",
+    "formulahendry.auto-rename-tag",
+    "dsznajder.es7-react-js-snippets",
+    "streetsidesoftware.code-spell-checker",
+    "naumovs.color-highlight",
+    "mkaufman.htmlhint",
+    "firsttris.vscode-jest-runner",
+    "aaron-bond.better-comments",
+    "mikestead.dotenv",
+    "formulahendry.terminal"
+  ]
+}
