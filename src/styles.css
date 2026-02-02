@@ -1,0 +1,244 @@
+body {
+  /* Dark gray */
+  background-color: #2a2a2a;
+  /* Light gray */
+  color: #f0f0f0;
+  font-family:
+    Brush Script MT,
+    cursive;
+  margin: 0;
+  padding: 0;
+  /* IE and Edge */
+  -ms-overflow-style: none;
+}
+
+body::-webkit-scrollbar {
+  display: none;
+}
+
+header {
+  /* Slightly lighter dark gray */
+  background-color: #4a4a4a;
+  text-align: center;
+  position: fixed;
+  width: 100%;
+  height: 80px;
+  top: 0;
+  /* Ensure header is above other content */
+  z-index: 1000;
+  /*Make overflow visible*/
+  overflow: hidden;
+}
+
+header h1 {
+  color: #f5c6e0;
+  /* Rose pink */
+  margin: 0;
+  margin-top: 10px;
+  white-space: nowrap;
+}
+
+nav {
+  background-color: #333;
+  /* Dark background for navbar */
+  text-align: center;
+  justify-content: space-around;
+  position: fixed;
+  width: 100%;
+  height: 48px;
+  top: 60px;
+  /* Adjust according to header height */
+  z-index: 1000;
+  /* Ensure navbar is above other content */
+}
+
+nav a {
+  color: #f5c6e0;
+  /* Rose pink */
+  text-decoration: none;
+  padding-top: 15px;
+  height: 100%;
+  margin: 0 10px;
+  width: 100px;
+  display: inline-block;
+  font-size: 16px;
+  font-weight: bold;
+}
+
+nav a:hover {
+  text-decoration: underline;
+}
+
+.nav-links {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.nav-links a {
+  color: #f5c6e0;
+  /* Rose pink */
+  text-decoration: none;
+  margin: 0 10px;
+  font-weight: bold;
+}
+
+.menu-toggle {
+  display: none;
+  background: #333;
+  width: 100%;
+  border: none;
+  color: #f5c6e0;
+  /* Rose pink */
+  font-size: 24px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+p a {
+  color: #f5c6e0;
+  /* Rose pink */
+  text-decoration: none;
+  font-weight: bold;
+}
+
+p a:hover {
+  text-decoration: underline;
+}
+
+.container {
+  padding: 140px 40px 40px;
+  /* Adjust padding to account for fixed header and navbar */
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.section {
+  margin-bottom: 40px;
+  scroll-margin-top: 160px;
+  /* Adjust scroll position to account for header and navbar */
+}
+
+.section h2 {
+  color: #f5c6e0;
+  /* Rose pink */
+  border-bottom: 2px solid #f5c6e0;
+  padding-bottom: 10px;
+}
+
+.section p {
+  line-height: 1.6;
+}
+
+footer {
+  background-color: #4a4a4a;
+  /* Slightly lighter dark gray */
+  text-align: center;
+  padding: 10px;
+  width: 100%;
+  bottom: 0;
+  z-index: 1000;
+  /* Ensure footer is above other content */
+}
+
+footer p {
+  margin: 0;
+}
+
+.project-preview-card,
+.blog-preview-card,
+.see-more-card {
+  background-color: #333;
+  /* Background color for the card */
+  padding: 15px;
+  /* Padding inside the card */
+  border-radius: 8px;
+  /* Rounded corners for the card */
+  margin-bottom: 15px;
+  /* Margin between cards */
+}
+
+.project-preview-card:hover,
+.blog-preview-card:hover,
+.see-more-card:hover {
+  background-color: #444;
+  /* Darker background color when hovering */
+}
+
+.project-preview-card h3,
+.blog-preview-card h3,
+.see-more-card {
+  color: #f5c6e0;
+  /* Rose pink */
+}
+
+.project-preview-card p,
+.blog-preview-card p {
+  margin-bottom: 10px;
+  /* Margin below the paragraph */
+  line-height: 1.6;
+}
+
+.preview-card-link,
+.see-more-link {
+  text-decoration: none;
+  /* Remove default underline for links */
+  color: inherit;
+  /* Inherit text color from parent */
+  display: block;
+  /* Make the entire card clickable */
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+video {
+  max-width: 100%;
+  height: auto;
+}
+
+@media (max-width: 600px) {
+  .nav-links {
+    display: none;
+    flex-direction: column;
+    width: 100%;
+    background-color: #333;
+  }
+
+  .nav-links a {
+    margin: 10px 0;
+    padding: 10px 20px;
+    border-top: 1px solid #444;
+    border-bottom: 1px solid #444;
+  }
+
+  .menu-toggle {
+    display: block;
+  }
+
+  .nav-links.show {
+    display: flex;
+  }
+
+  header h1 {
+    font-size: 30px;
+  }
+}
+
+/* Common Breakpoints: */
+/* Extra small devices (phones, 600px and down) */
+/* @media only screen and (max-width: 600px) {...} */
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+/* @media only screen and (min-width: 600px) {...} */
+
+/* Medium devices (landscape tablets, 768px and up) */
+/* @media only screen and (min-width: 768px) {...} */
+
+/* Large devices (laptops/desktops, 992px and up) */
+/* @media only screen and (min-width: 992px) {...} */
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+/* @media only screen and (min-width: 1200px) {...} */
