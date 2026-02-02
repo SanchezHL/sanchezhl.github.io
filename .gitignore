@@ -1,2 +1,23 @@
+# Dependencies
 node_modules/
+
+# Build output
+dist/
+build/
+
+# Environment files
+.env
+.env.*
+
+# Generated files
+*.log
+*.lock
+
+# Generated config files
+*.config.mjs
+*.config.mjs.map
+*.config.d.mts
+*.config.d.mts.map
+
+# Markup
 *.md
