@@ -1,0 +1,60 @@
+---
+import Welcome from "../components/Welcome.astro";
+import BaseLayout from "../layouts/BaseLayout.astro";
+
+// Welcome to Astro! Wondering what to do next? Check out the Astro documentation at https://docs.astro.build
+// Don't want to use any of this? Delete everything in this file, the `assets`, `components`, and `layouts` directories, and start fresh.
+---
+
+<BaseLayout
+  title="David Sanchez-Hermosilla's Personal Page"
+  id="1"
+  description="Tech Blog"
+  og_title="Developer Blog David Sanchez-Hermosilla"
+  og_image="https://sanchezhl.github.io/assets/main.png"
+  og_url="https://sanchezhl.github.io/"
+  og_description="Developer related topics for everyone"
+>
+  <!-- <Welcome /> -->
+  <div class="section" id="about-me">
+    <h2>About Me</h2>
+    <p>Info about me</p>
+  </div>
+  <div class="section" id="latest-projects">
+    <h2>Latest Projects</h2>
+    <a href="thisblog.html" class="preview-card-link">
+      <div class="project-preview-card">
+        <h3>This Blog</h3>
+        <p>The development of a tech blog</p>
+      </div>
+    </a>
+    <a href="projects.html" class="see-more-link">
+      <div class="see-more-card">
+        <h4>See full list of projects</h4>
+      </div>
+    </a>
+  </div>
+  <div class="section" id="latest-articles">
+    <h2>Latest Blog Articles</h2>
+    <a href="article1.html" class="preview-card-link">
+      <div class="blog-preview-card">
+        <h3>Title</h3>
+        <p>Summary of the first article...</p>
+      </div>
+    </a>
+    <a href="blog.html" class="see-more-link">
+      <div class="see-more-card">
+        <h4>See full list of articles</h4>
+      </div>
+    </a>
+  </div>
+  <div class="section" id="contact">
+    <h2>Contact</h2>
+    <p>
+      You can reach me at <a href="mailto:david.sanchez@rxg.es">david.sanchez@rxg.es</a>
+    </p>
+  </div>
+</BaseLayout>
+<footer>
+  <p>&copy; 2026 David Sanchez-Hermosilla. All rights reserved.</p>
+</footer>

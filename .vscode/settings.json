@@ -9,8 +9,9 @@
   "eslint.useFlatConfig": true,
   "eslint.validate": ["javascript", "javascriptreact", "typescript", "typescriptreact"],
   "files.associations": {
-    "*.astro": "html"
+    "*.astro": "astro"
   },
+  "prettier.documentSelectors": ["**/*.astro"],
   "workbench.colorTheme": "Default Dark+",
   "files.autoSave": "afterDelay",
   "files.autoSaveDelay": 1000,
@@ -31,6 +32,10 @@
     "editor.tabSize": 2
   },
   "[html]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode",
+    "editor.tabSize": 2
+  },
+  "[astro]": {
     "editor.defaultFormatter": "esbenp.prettier-vscode",
     "editor.tabSize": 2
   }

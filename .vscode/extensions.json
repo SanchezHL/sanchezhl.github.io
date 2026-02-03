@@ -11,6 +11,7 @@
     "firsttris.vscode-jest-runner",
     "aaron-bond.better-comments",
     "mikestead.dotenv",
-    "formulahendry.terminal"
+    "formulahendry.terminal",
+    "astro-build.astro-vscode"
   ]
 }

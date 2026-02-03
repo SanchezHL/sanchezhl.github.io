@@ -1,0 +1,52 @@
+---
+interface Props {
+  id: string;
+  title: string;
+  description: string;
+  og_title: string;
+  og_image: string;
+  og_url: string;
+  og_description: string;
+}
+const { id, title, description, og_title, og_image, og_url, og_description } = Astro.props;
+
+import "../styles/styles.css";
+---
+
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>{title}</title>
+    <meta name="description" content={description} />
+    <link rel="icon" type="image/svg+xml" href="../../public/assets/favicon.svg" />
+
+    <meta property="og:locale" content="en_US" />
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content={og_title} />
+    <meta property="og:image" content={og_image} />
+    <meta property="og:url" content={og_url} />
+    <meta property="og:description" content={og_description} />
+    <!-- <meta property="og:site_name" content="Example Media"> -->
+  </head>
+  <body>
+    <header>
+      <h1 class="head-tittle" id="headTittle">David Sanchez-Hermosilla</h1>
+    </header>
+    <nav>
+      <button class="menu-toggle" id="menuToggle">&#9776; Navegation</button>
+      <div class="nav-links" id="navLinks">
+        <a href="/">Home</a>
+        <a href="projects">Projects</a>
+        <a href="blog">Blog</a>
+        <a href="contact">Contact</a>
+      </div>
+    </nav>
+
+    <div class="container">
+      <slot />
+      <!-- Page content goes here -->
+    </div>
+  </body>
+</html>
